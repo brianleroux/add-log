@@ -1,4 +1,6 @@
-let add = (first, second) => first + second
+function add (first, second) {
+  return first + second
+}
 
 export default add
 
