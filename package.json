@@ -1,0 +1,18 @@
+{
+  "name": "add-log",
+  "version": "1.0.0",
+  "description": "demonstrates importing as well as exporting with es6 using 6to5 and npm scripts",
+  "main": "dist/pretty-print.js",
+  "scripts": {
+    "js":"6to5 --modules commonInterop src --out-dir dist",
+    "prepublish":"npm run js",
+    "test": "npm run js && 6to5-node test/test-all.js"
+  },
+  "author": "Brian LeRoux <b@brian.io>",
+  "license": "Apache2",
+  "devDependencies": {
+    "6to5": "^1.14.6",
+    "browserify-tape-spec": "^1.1.2",
+    "tape": "^3.0.3"
+  }
+}
